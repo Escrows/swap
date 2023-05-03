@@ -2,7 +2,7 @@
 
 
 .bg-white10 {
-  background: #181818;
+  position: absolute;
 }
 
 .bg-purple {
@@ -19,6 +19,50 @@
 
 .halfwhite {
   color: rgba(255, 255, 255, 0.5);
+}
+
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #010718;
+    overflow: hidden;
+}
+.container{
+    width: 446px;
+    object-fit: none;
+    object-position: 50px 30px;
+}
+
+.container9{
+    width: 50px;
+    height: 3360px;
+    object-fit: none;
+    object-position: 50px 30px;
+}
+
+.container .text{
+    position: relative;
+	background: linear-gradient(to right,#19d66a 0%,#ee2359 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:700;
+    font-size: 30px;
+    font-weight: 600;
+}
+.container .text.first-text{
+    color: #FFF;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
 }
 
 .typewriter h1 {
@@ -50,6 +94,55 @@
   color: white;
 }
 
+.white2 {
+    position: relative;
+	color: #FFFFFF;
+
+    font-weight:700;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+
+.red {
+  color: #19d66a;
+}
+
+.red2 {
+  color: #ee2359;
+}
+
+.container2 {
+  max-width: 3500px;
+  width: 110%;
+  line-height: 50%;
+  position: relative;
+  transform: translateY(15%);
+  top: 50%;
+  margin: 0 auto;
+}
+
+.container3 {
+  max-width: 3500px;
+  width: 100%;
+  line-height: 580%;
+  position: relative;
+  transform: translateY(15%);
+  top: 50%;
+  margin: 0 auto;
+}
+
+.container5 {
+  max-width: 1200px;
+  width: 90%;
+  line-height: 580%;
+  position: relative;
+  transform: translateY(15%);
+  top: 50%;
+  margin: 0 auto;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -67,7 +160,7 @@ html {
   scroll-padding-top: 10rem;
   font-size: 10px;
   color: white;
-  background: #181818;
+  background: #000000;
   font-family: "Poppins", sans-serif;
 }
 
@@ -90,7 +183,7 @@ h5 {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 2200px;
   width: 90%;
   line-height: 580%;
   margin: 0 auto;
@@ -140,7 +233,10 @@ h5 {
 }
 
 .ta-center {
-  text-align: center;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .ta-right {
@@ -708,6 +804,10 @@ h5 {
   .overhidden-xs {
     overflow: hidden;
   }
+}
+
+.size5000 {
+  font-size: 1.5rem;
 }
 
 .size1 {
@@ -1395,8 +1495,11 @@ h5 {
   margin-left: 10rem;
 }
 
+
+
 .spacer10 {
-  padding: 10rem 0;
+  padding: 1rem 0;
+  background-color: #000000;
 }
 
 .padding10 {
@@ -3781,3 +3884,4 @@ footer a:hover {
   color: white;
 }
 /*# sourceMappingURL=style.css.map */
+
